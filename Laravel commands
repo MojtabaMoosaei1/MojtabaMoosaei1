@@ -1,0 +1,2 @@
+php artisan server
+php artisan key:generate
