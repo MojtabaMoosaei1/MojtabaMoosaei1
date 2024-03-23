@@ -1,0 +1,15 @@
+فایل routes -> web.php
+
+Route::get('index', function () {  یعنی متد باید حتما get باشد
+    return "salam";
+});
+
+Route::match([get , post],'/', function () {  میتونی متد های get or post استفاده بشه
+    return "salam";
+});
+
+Route::any('/', function () {  هر متدی برای میشه استفاده کرد
+    return "salam";
+});
+
+
