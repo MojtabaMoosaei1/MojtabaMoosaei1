@@ -12,4 +12,10 @@ Route::any('/', function () {  هر متدی برای میشه استفاده ک
     return "salam";
 });
 
+Route::get('/{id}', function ($id) {
+    return $id;
+})->where('id' , '[0-9]');
+
+
+
 
