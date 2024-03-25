@@ -19,3 +19,6 @@ Route::get('/{id}', function ($id) {
 
 
 
+php artisan make:controller HomeContriller -- resource
+
+
