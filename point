@@ -13,3 +13,6 @@ Route::any('/', function () {  هر متدی برای میشه استفاده ک
 });
 
 
+php artisan make:controller HomeContriller -- resource
+
+
