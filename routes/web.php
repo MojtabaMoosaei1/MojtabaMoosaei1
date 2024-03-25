@@ -3,13 +3,22 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome') ->with(['name'=>'mojtaba' , 'famil'=> 'moosaei']);
+    return view('welcome');
 });
 
-Route::get('/home', function () {
-    $var = "test"; 
-    return view('welcome' , compact('var'));
-});
+
+// Route::get('/' , "CategoryController@index");
+
+// Route::resource('/category' , 'CategoryController');
+
+// Route::get('/', function () {
+//     return view('welcome') ->with(['name'=>'mojtaba' , 'famil'=> 'moosaei']);
+// });
+
+// Route::get('/home', function () {
+//     $var = "test"; 
+//     return view('welcome' , compact('var'));
+// });
 
 // Route::group(['prefix' => 'admin/panel' ], function(){
 //     Route::get('/' , function(){

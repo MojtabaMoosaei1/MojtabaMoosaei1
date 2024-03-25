@@ -16,3 +16,9 @@ Route::any('/', function () {  هر متدی برای میشه استفاده ک
 php artisan make:controller HomeContriller -- resource
 
 
+Route::resource('/category' , 'CategoryController'); با استفاده ازین دستور میشه هر 7 دستور راک ر. که شامل درج و حدف  و ... هست رو بسازیم
+
+
+php artisan route:list  تمامی روت های مارو نمایش میده .مثلا یک کنترلز چه متذهایی با چه verbهایی هست
+
+
