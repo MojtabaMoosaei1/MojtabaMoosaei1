@@ -21,4 +21,10 @@ Route::resource('/category' , 'CategoryController'); با استفاده ازی�
 
 php artisan route:list  تمامی روت های مارو نمایش میده .مثلا یک کنترلز چه متذهایی با چه verbهایی هست
 
+php artisan make:controller name --invokable
+
+
+Route::get('adres-vorodi', function () {  
+    redirect()->to("adres-khoroji");
+});
 
