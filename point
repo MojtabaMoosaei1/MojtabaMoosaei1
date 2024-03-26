@@ -19,3 +19,18 @@ Route::get('/{id}', function ($id) {
 
 
 
+php artisan make:controller HomeContriller -- resource   این دستور همه متدهای اصلی رو توی اون کنترلز میسازه برامون
+
+
+Route::resource('/category' , 'CategoryController'); با استفاده ازین دستور میشه هر 7 دستور راک ر. که شامل درج و حدف  و ... هست رو بسازیم
+
+
+php artisan route:list  تمامی روت های مارو نمایش میده .مثلا یک کنترلز چه متذهایی با چه verbهایی هست
+
+php artisan make:controller name --invokable
+
+
+Route::get('adres-vorodi', function () {  
+    redirect()->to("adres-khoroji");
+});
+
