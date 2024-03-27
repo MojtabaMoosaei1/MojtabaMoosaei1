@@ -6,14 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-<form action="{{route('home.store')}}" method="post">
+
+<p>salam</p>
+<!-- <form action="{{route('home.store')}}" method="POST">
    @csrf
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" value=""><br>
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname" value=""><br><br>
   <input type="submit" value="Submit">
-</form> 
+</form>  -->
 
 </body>
 </html>

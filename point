@@ -28,3 +28,20 @@ Route::get('adres-vorodi', function () {
     redirect()->to("adres-khoroji");
 });
 
+
+
+
+redirect()->away()    برای اینکه بخوایم به یک قسمت خارج از سایت خودمون یعنی یک سایت دیگه فرستاده بشیم
+
+php artisan vendor:publish --tag=laravel-errors   برای نمایش صفحات ارور 
+
+
+وقتی از کوکی استفاده میکنیم چون خود لاراوال کاری میکنه که کلاینت نتونه تغییری بهش بده پس باید بریم توی پوشه 
+
+
+تست کردن تست هایی که مینویسم 
+./vendor/bin/phpunit
+
+
+اگر بخواهیم فقط یک تست رو اجرا بگیریم از 
+./vendor/bin/phpunit --filter namefile
