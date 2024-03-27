@@ -11,7 +11,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return "salam in HomeController in index";
+        return 'this is index';
+
     }
 
     /**
@@ -19,8 +20,9 @@ class HomeController extends Controller
      */
     public function create()
     {
-        return 'name:' .  request('name').' '  . 'age: '. request('age');
-        // return view('form');
+        return "this is create";
+        // $user =['name'=>'ali','famil'=>'mohammadi','namepedar'=>'mojtaba'];
+        // return "this is create". view('form' , compact('user'));
     }
 
     /**
@@ -28,7 +30,9 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-       dd($request);
+    //    dd($request);
+
+    // return response()->json($request) ;
     }
 
     /**

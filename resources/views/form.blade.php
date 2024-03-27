@@ -6,16 +6,41 @@
     <title>Document</title>
 </head>
 <body>
+<h1>
+  Welcomm Laravel
+</h1>
+{{----------------------------------------------------------------------}}
 
-<p>salam</p>
-<!-- <form action="{{route('home.store')}}" method="POST">
+{{--}} @foreach ($user as $item)
+    {{ $item }}
+@endforeach -->
+
+{{----------------------------------------------------------------------}}
+
+{{-- @forelse ($user as $item)
+{{ $item }}
+
+@empty
+
+{{"empty"}}
+
+@endforelse -->
+{{----------------------------------------------------------------------}}
+@foreach($user as $key => $value)
+  {{$key . '=>' . $value }}<br>
+
+@endforeach
+
+
+<form action="{{route('home.store')}}" method="POST" style="margin:100px">
    @csrf
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" value=""><br>
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname" value=""><br><br>
   <input type="submit" value="Submit">
-</form>  -->
+</form> 
+{{----------------------------------------------------------------------}}
 
 </body>
 </html>
